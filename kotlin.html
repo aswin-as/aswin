@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            font: 400 1em/1.5 "Neuton"; 
+            /* background: #090d00;  */
+            /* background: transparent; */
+            background-image: none;
+            color: #B125EA; 
+            text-align: center; 
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        p {
+            text-transform: uppercase;
+            letter-spacing: .5em;
+            display: inline-block;
+            border: 4px double #B125EA;
+            border-width: 4px 0;
+            padding: 1em 0;
+            position: relative;
+            width: 80%;
+            max-width: 40em; /* Limit width on larger screens */
+            margin: 0 auto;
+        }
+
+        p span {
+            font: 700 2em/1 "Oswald", sans-serif; /* Adjust font size for smaller screens */
+            letter-spacing: 0;
+            padding: .25em 0 .325em;
+            display: block;
+            margin: 0 auto;
+            text-shadow: 0 0 30px #B125EA; /* Adjust text shadow for smaller screens */
+            background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: aitf 80s linear infinite;
+            -webkit-transform: translate3d(0,0,0);
+            -webkit-backface-visibility: hidden;
+        }
+
+        /* Animate Background Image */
+        @-webkit-keyframes aitf {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        div {
+            width: 100%;
+        }
+
+        /* Responsive adjustments */
+        @media only screen and (max-width: 600px) {
+            p {
+                width: 90%; /* Adjust width for smaller screens */
+            }
+            p span {
+                font-size: 1.5em; /* Decrease font size for smaller screens */
+                text-shadow: 0 0 20px #B125EA; /* Adjust text shadow for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <!--   Spice up your type with CSS -->
+            <span>
+                Learning Kotlin
+            </span>
+        </p>
+    </div>
+</body>
+</html>
