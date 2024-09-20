@@ -1083,8 +1083,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- 
  */
-header, header #topbar{
-	position: absolute;
+header{
+	position: fixed;
 	width: 100%;
 	min-height: 66px;
 	z-index: 600;
