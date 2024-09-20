@@ -35,6 +35,141 @@
 	================================================== -->
 	<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="images/app-design.png">
+	<!-- app css -->
+	<style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a comfortable font */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        .app_header {
+            background-color: #6200ea;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .app_header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .app_header p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .app_projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Project Card */
+        .app_project-card {
+            padding: 8px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .app_project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .app_project-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .app_project-card:hover .app_project-image {
+            transform: scale(1.05);
+        }
+
+        .app_project-info {
+            padding: 20px;
+        }
+
+        .app_project-info h2 {
+            margin-bottom: 10px;
+            color: #6200ea;
+        }
+
+        .app_project-info p {
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        /* Links Styling */
+        .app_project-links a {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            background-color: #6200ea;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .app_project-links a:hover {
+            background-color: #3700b3;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .app_header h1 {
+                font-size: 2.5em;
+            }
+
+            .app_header p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .app_project-links a {
+                display: block;
+                margin-right: 0;
+            }
+        }
+    </style>
+
+	<!-- app css finished -->
+
 </head>
 
 <body id="top">
@@ -85,8 +220,9 @@
 	   			<h1>I'm Aswin.</h1>
 
 	   			<p class="intro-position">
+					<span>Android Dev</span> 
 	   				<span>BCA GRADUATE</span>
-	   				<span>LOOKING FOR WORK</span> 
+	   				
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -97,17 +233,118 @@
    	</div> <!-- /intro-content --> 
 
    	<ul class="intro-social">        
-         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="www.linkedin.com/in/aswinandroiddeveloper" target="_blank"><i class="fa fa-linkedin"></i></a></li>
          <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
-         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://github.com/aswin-as" target="_blank"><i class="fa fa-github" target="_blank"></i></a></li>
          <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-      </ul> <!-- /intro-social -->      	
+		 <li><a href="https://wa.me/7025138765" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+		</ul> <!-- /intro-social -->      	
 
    </section> <!-- /intro -->
+   <iframe src="kotlin.html" scrolling="no" width="100%" height="13%" border="0"></iframe>
 
+   <!-- kotlin projects -->
+   <header class="app_header">
+	<h1>My Android App Projects</h1>
+	<p>Explore the collection of my Android applications developed using Kotlin and Jetpack Compose.</p>
+</header>
 
-   <iframe src="kotlin.html" scrolling="hidden" width="100%" height="100%" border="0"></iframe>
+<main>
+	<section class="app_projects">
+		<!-- Project 1 -->
+		<div class="app_project-card">
+			<!-- <h2>Kotlin & Jetpack Compose App Development</h2> -->
+			<!-- <p>Shared my experience in developing a Kotlin & Jetpack Compose app.</p> -->
+			<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7242088084526227457" 
+					height="600" 
+					width="100%" 
+					frameborder="0" 
+					allowfullscreen 
+					title="Embedded LinkedIn Post">
+			</iframe>
+		</div>
+
+		<!-- Project 2 -->
+		<div class="app_project-card">
+			<!-- <h2>Jetpack Compose with Kotlin</h2> -->
+			<!-- <p>Explored the use of Jetpack Compose in my latest Android app.</p> -->
+			<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7240000304002330627" 
+					height="600" 
+					width="100%" 
+					frameborder="0" 
+					allowfullscreen 
+					title="Embedded LinkedIn Post">
+			</iframe>
+		</div>
+
+		<!-- Project 3 -->
+		<div class="app_project-card">
+			<!-- <h2>Build an App UI</h2> -->
+			<!-- <p>Created a user interface with a TextField and a Button using Jetpack Compose.</p> -->
+			<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7236555657838010368" 
+					height="600" 
+					width="100%" 
+					frameborder="0" 
+					allowfullscreen 
+					title="Embedded LinkedIn Post">
+			</iframe>
+		</div>
+
+		<!-- Project 4 -->
+		<div class="app_project-card">
+			<!-- <h2>Android Basics with Kotlin</h2> -->
+			<!-- <p>Learned the fundamentals of Android development using Kotlin.</p> -->
+			<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7230500602110259200" 
+					height="600" 
+					width="100%" 
+					frameborder="0" 
+					allowfullscreen 
+					title="Embedded LinkedIn Post">
+			</iframe>
+		</div>
+
+		<!-- Project 5 -->
+		<div class="app_project-card">
+			<!-- <h2>Android Basics with Jetpack Compose</h2> -->
+			<!-- <p>Continued exploring Android basics, focusing on Jetpack Compose.</p> -->
+			<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7227942961609646080" 
+					height="600" 
+					width="100%" 
+					frameborder="0" 
+					allowfullscreen 
+					title="Embedded LinkedIn Post">
+			</iframe>
+		</div>
+
+		<!-- Project 6 -->
+		<div class="app_project-card">
+			<!-- <h2>Kotlin & Jetpack Compose Android App</h2> -->
+			<!-- <p>Developed an Android app using Kotlin and Jetpack Compose.</p> -->
+			<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7222497899174146049" 
+					height="600" 
+					width="100%" 
+					frameborder="0" 
+					allowfullscreen 
+					title="Embedded LinkedIn Post">
+			</iframe>
+		</div>
+
+		<!-- Project 7 -->
+		<div class="app_project-card">
+			<!-- <h2>Android Development with Kotlin</h2> -->
+			<!-- <p>Shared insights on Android development with Kotlin and Jetpack Compose.</p> -->
+			<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7221812336892813312" 
+					height="600" 
+					width="100%" 
+					frameborder="0" 
+					allowfullscreen 
+					title="Embedded LinkedIn Post">
+			</iframe>
+		</div>
+	</section>
+</main>
+   <!-- kotlin projects finised -->
+
    <!-- about section
    ================================================== -->
    <section id="about">  
@@ -167,6 +404,14 @@
    			<p>These are my some Skills that obtained from COLLEGE | INTERNET | COURSERA</p>
 
 				<ul class="skill-bars">
+					<li>
+						<div class="progress percent75"><span>85%</span></div>
+						<strong>Kotlin</strong>
+					</li>
+					<li>
+						<div class="progress percent75"><span>90%</span></div>
+						<strong>JetPack Compose</strong>
+					</li>
 				   <li>
 				   	<div class="progress percent90"><span>90%</span></div>
 				   	<strong>HTML5</strong>
@@ -179,10 +424,7 @@
 				   	<div class="progress percent70"><span>70%</span></div>
 				   	<strong>JavaScript</strong>
 				   </li>
-				   <li>
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Kotlin</strong>
-				   </li>
+				   
 				   <li>
 
 				   	<div class="progress percent75"><span>75%</span></div>
@@ -807,20 +1049,22 @@
    ================================================== -->
 
    <footer>
-     	<div class="row">
+
+	<p>Love you ! </p>
+     	<!-- <div class="row">
 
      		<div class="col-six tab-full pull-center social">
 
      			<ul class="footer-social">        
 			      <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
 			      <!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
-			      <li><a href="https://wa.me/7025138765"><i class="fa fa-phone"></i></a></li>
+			      <!-- <li><a href="https://wa.me/7025138765"><i class="fa fa-phone"></i></a></li>
 
 			      <li><a href="https://github.com/aswin-as"><i class="fa fa-github"></i></a></li>
 			      <li><a href="https://www.instagram.com/aswin___as/"><i class="fa fa-instagram"></i></a></li>
 			   </ul> 
 	      		
-	      </div>
+	      </div> -->
 
 
 

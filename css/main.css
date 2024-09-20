@@ -1091,12 +1091,12 @@ header {
 }
 header .row {
 	position: relative;
-	min-height: 66px;
+	min-height: 26px;
 }
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
+	min-width: 10px;
 	min-height: 66px;
 	position: absolute;
 	left: 90px;
@@ -2544,6 +2544,7 @@ footer .copyright span:last-child::after {
 @media only screen and (max-width:768px) {
 	footer {
 		text-align: center;
+		height: 10px;
 	}
 	footer .social {
 		display: block;
